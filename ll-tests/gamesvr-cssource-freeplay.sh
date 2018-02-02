@@ -1,5 +1,5 @@
 #!/bin/bash -i
-declare LLCK_LOGFILE="/app/ll-tests/gamesvr-cssource.log";
+declare LLCK_LOGFILE="/app/ll-tests/gamesvr-cssource-freeplay.log";
 declare LLCK_CMD="/app/srcds_run -game cstrike +map de_dust2 -insecure -tickrate 100 -norestart +sv_lan 1";
 declare LLCK_CMD_TIMEOUT=60;
 
