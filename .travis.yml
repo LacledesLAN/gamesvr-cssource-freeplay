@@ -23,7 +23,7 @@ notifications:
     secure: b6amzxMnkag3PxH+HA9qJWVbwyAYmTEdt96dkrjZxa7Ge82yZkqcBWPZLXQxXdaCa/tPSXOyqs4fygxs0YUuWXhN3EZhAJbaQ/5JPRN5lHPA2IQUNOLMzH20v8ugFN3CQORabAdPa28tXg+6t0QP341I381Xo0zmrHOAHe8Qa4YSLZewquurv0cCZuEcvanC7nMtqliG40sGv1P3LnDpPL29iwSO/kQLY2Fs/yvf+JPHYIW+6EcFFrPzJrfVFJSSDyiU0MpWrzFrzpwiobMLHgS3M1KLadqnqQKkEpMp7dn90TzMaP8eQciKNG7righSRTcHlR8Qfz7UgoSCv/iVHCf6xQoH0Z4lAqcrSRwfuhBCmb/nwlJVf4qWARYsXmuq0Xl3k+AAM9/rH/JnRP7KlliOwDetOBGbMetSaJ2v15BzGcA8BM1kyB07YOILHK5WpHfAX2ugSKtprcxHA84JJ3va7RkqDcCs4zpyk6VvnGX2xMxazy5bebuQyPlqU5+R+yIRb7+d4HT5Z63Vxf/XE81Rhu4Kx5mvAr2AvLur2cxNPsNGLd9bouP6v7a8mhNzCdNYRK7LYCE3pTpURoRr4PholuVxXFybETkBtlpWx6qirkVbxwQ4Ra+5LI4qlQSZQRUV1YHWAZiUEnIqSm3d3gc4d9c7H8lJDQK7rHPJVDQ=
 
 before_deploy:
-  - docker login -u "$DOCKERHUB_USER" -p "$DOCKERHUB_PASS";
+  - echo "$DOCKERHUB_PASS" | docker login -u "$DOCKERHUB_USER" --password-stdin;
 deploy:
   provider: script
   script: docker push lacledeslan/gamesvr-cssource-freeplay
