@@ -1,10 +1,12 @@
+# Laclede's LAN Counter-Strike: Source Dedicated Freeplay Server
+
 ![Laclede's LAN Counter-Strike: Source Dedicated Freeplay Server](https://raw.githubusercontent.com/LacledesLAN/gamesvr-cssource-freeplay/master/.misc/banner-cssource-freeplay.png "Laclede's LAN Counter-Strike: Source Dedicated Freeplay Server")
 
 This repository is maintained by [Laclede's LAN](https://lacledeslan.com). Its contents are heavily tailored and tweaked for use at our charity LAN-Parties. For third-parties we recommend using this repo only as a reference example and then building your own using [gamesvr-cssource](https://github.com/LacledesLAN/gamesvr-cssource) as the base image for your customized server.
 
 ## Linux
-[![](https://images.microbadger.com/badges/version/lacledeslan/gamesvr-cssource-freeplay.svg)](https://microbadger.com/images/lacledeslan/gamesvr-cssource-freeplay "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/lacledeslan/gamesvr-cssource-freeplay.svg)](https://microbadger.com/images/lacledeslan/gamesvr-cssource-freeplay "Get your own image badge on microbadger.com")
+
+[![linux/amd64](https://github.com/LacledesLAN/gamesvr-cssource-freeplay/actions/workflows/build-linux-image.yml/badge.svg?branch=master)](https://github.com/LacledesLAN/gamesvr-cssource-freeplay/actions/workflows/build-linux-image.yml)
 
 ### Download
 
